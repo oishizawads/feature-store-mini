@@ -1,0 +1,17 @@
+[project]
+name = "feature-store-mini"
+version = "0.1.0"
+description = "特徴量の定義・更新頻度・欠損率・鮮度を一覧し、特徴量管理と再現性の考え方を示す Streamlit アプリ"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.40",
+    "numpy>=1.26",
+    "pandas>=2.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
